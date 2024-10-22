@@ -1,0 +1,397 @@
+.accordion {
+  background-color: #fa3838;
+  padding: 100px 50px;
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 61px;
+    color: var(--light-color);
+  }
+
+  @media screen and (max-width: 1440px) {
+    &__title {
+      font-size: 25px;
+      line-height: 34px;
+      text-align: center;
+    }
+  }
+
+  &__wrapper {
+    padding: 0 180px;
+    margin-top: 40px;
+    position: relative;
+
+    &-title {
+      display: inline-block;
+      transform: rotate(270deg);
+      font-weight: 800;
+      font-size: 25px;
+      line-height: 34px;
+      text-transform: uppercase;
+      color: var(--light-color);
+      position: absolute;
+      margin: 0;
+
+      span {
+        color: var(--black-color);
+        margin-left: 8px;
+      }
+
+      &:nth-child(1) {
+        writing-mode: horizontal-tb;
+        text-orientation: mixed;
+        top: 20%;
+        left: -15px;
+      }
+
+      @media screen and (max-width: 1200px) {
+        &:nth-child(1) {
+          writing-mode: horizontal-tb;
+          text-orientation: mixed;
+          top: 20%;
+          left: -110px;
+        }
+      }
+
+      &:nth-child(2) {
+        writing-mode: horizontal-tb;
+        text-orientation: mixed;
+        bottom: 19%;
+        left: -15px;
+      }
+
+      @media screen and (max-width: 1200px) {
+        &:nth-child(2) {
+          writing-mode: horizontal-tb;
+          text-orientation: mixed;
+          bottom: 19%;
+          left: -110px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 760px){
+      &-title{
+        display: none;
+      }
+    }
+
+    &-items {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+
+      &-block {
+        display: flex;
+        align-items: center;
+        min-height: 85px;
+        position: relative;
+
+        &-text {
+          height: 85px;
+          width: 30%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: var(--light-color);
+          position: relative;
+
+          &-title {
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 27px;
+            margin: 0;
+            color: var(--black-color);
+          }
+
+          .titleTwo {
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 27px;
+            margin: 0;
+            color: var(--black-color);
+          }
+
+          &-tooltip {
+            position: absolute;
+            top: 125%;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 5px;
+            visibility: hidden;
+            filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+
+            span {
+              display: inline-block;
+              font-weight: 300;
+              font-size: 18px;
+              line-height: 22px;
+              color: #2a2a2a;
+              padding: 10px;
+            }
+
+            @media screen and (max-width: 1440px) {
+              span {
+                font-size: 16px;
+                padding: 5px;
+              }
+            }
+
+            &-header {
+              display: flex;
+              align-items: center;
+              column-gap: 10px;
+              padding: 5px;
+              border-bottom: 0.5px solid #82868c;
+
+              p {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                margin: 0;
+                color: #2A2A2A;
+              }
+            }
+
+            &.activeTooltip {
+              visibility: visible;
+              animation: scale-display 0.3s;
+            }
+          }
+
+          @media screen and (max-width: 760px){
+            &-tooltip{
+              display: none;
+            }
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        @media screen and (max-width: 760px){
+          &-text{
+            display: none;
+          }
+        }
+
+        &-img {
+          height: 85px;
+          width: 15%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #737373;
+        }
+
+        @media screen and (max-width: 760px){
+          &-img{
+            width: 45px;
+            height: 45px;
+
+            img{
+              width: 25px;
+              height: 25px;
+            }
+          }
+        }
+
+        &-arrow {
+          position: absolute;
+          right: -35px;
+          top: 35%;
+          width: 20px;
+          cursor: pointer;
+
+          &.activeArrow {
+            transform: rotate(180deg);
+          }
+        }
+
+        @media screen and (max-width: 760px){
+          &-arrow{
+            display: none;
+          }
+        }
+      }
+
+      &-panel {
+        width: 52.5%;
+        max-width: 52.5%;
+        background-color: var(--light-color);
+        margin: 0 auto;
+        display: none;
+        padding: 10px;
+        border-radius: 5px;
+        position: relative;
+        filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+
+        &-header {
+          display: flex;
+          column-gap: 10px;
+          border-bottom: 0.5px solid #82868c;
+          margin-bottom: 10px;
+
+          &-title {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 27px;
+            color: #2a2a2a;
+            margin: 0;
+          }
+        }
+
+        &-desc {
+          margin: 0;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 27px;
+          color: #2a2a2a;
+
+          &:not(:last-child) {
+            margin-bottom: 30px;
+          }
+
+          @media screen and (max-width: 1550px) {
+            &:not(:last-child) {
+              margin-bottom: 10px;
+            }
+          }
+        }
+
+        @media screen and (max-width: 1550px) {
+          &-desc {
+            font-size: 18px;
+          }
+        }
+
+        @media screen and (max-width: 1440px) {
+          &-desc {
+            font-size: 14px;
+          }
+        }
+
+        &.activePanel {
+          animation: scale-display .3s;
+          display: inline-block;
+        }
+      }
+
+      @media screen and (max-width: 760px){
+        &-panel{
+          width: 100%;
+          max-width: 100%;
+        }
+        &-block{
+          min-height: 45px;
+        }
+      }
+
+    }
+
+    .accordion__item {
+      width: 100%;
+      height: auto;
+    }
+
+    .accordion__slot {
+      width: 100%;
+      display: block;
+    }
+
+    @media screen and (max-width: 1200px) {
+      .accordion__slot {
+        img {
+          width: 30%;
+        }
+      }
+    }
+
+    .accordion__button {
+      cursor: pointer;
+      padding: 30px 20px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 27px;
+      color: #23211F;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+      background: #d9d8d7;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+
+      span {
+        width: 35%;
+        text-align: center;
+      }
+    }
+
+    @media screen and (max-width: 768px){
+      .accordion__button{
+        height: 45px;
+        padding: 0 20px;
+
+        img{
+          width: 20%;
+        }
+
+        span {
+          width: auto;
+          text-align: center;
+        }
+      }
+    }
+
+
+  }
+
+  @media screen and (max-width: 1200px) {
+    &__wrapper {
+      padding: 0 50px;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    &__wrapper{
+      padding: 0;
+    }
+  }
+
+  &__bottom {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #fff;
+    margin: 20px 0 0 0;
+    padding-left: 50px;
+  }
+  @media screen and (max-width: 768px){
+    &__bottom{
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1440px){
+  .accordion{
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .activePanel{
+    width: 100% !important;
+  }
+}
+

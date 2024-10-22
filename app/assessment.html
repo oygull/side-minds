@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>CRB</title>
+
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="https://code.jquery.com/jquery-3.6.1.min.js"
+          integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+          integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="js/main.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+</head>
+
+
+
+
+<body class="page__body">
+<div class="site-container">
+  <header class="header">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <div class="header__burger burger">
+      <img src="img/burgermenu.svg" alt="burger menu">
+    </div>
+    <a href="index.html" class="header__logo">
+      <img src="img/logo.png" alt="logo" class="logo__img">
+    </a>
+    <div id="menu" class="d-flex align-items-center header__mobile ">
+      <div class="header__close">
+        <span>&times;</span>
+      </div>
+      <!--   menu   -->
+      <ul class="list-reset d-flex justify-content-between  header__mobile-menu">
+        <li class="header__nav">
+          <img class="header__nav-img" src="img/home.svg" alt="">
+          <a href="index.html" class="header__link">Our approach</a>
+        </li>
+        <li class="header__nav">
+          <img class="header__nav-img" src="img/aboutIcon.svg" alt="">
+          <a href="our-experience.html" class="header__link">Our Experience</a>
+        </li>
+        <li class="header__nav">
+          <img class="header__nav-img" src="img/news.svg" alt="">
+          <a href="marketing.html" class="header__link">The Marketing Leader's Code Book</a>
+        </li>
+        <li class="header__nav">
+          <img class="header__nav-img" src="img/chat.svg" alt="">
+          <a href="assessment.html" class="header__link">TMLC Assessment</a>
+        </li>
+        <li class="header__nav">
+          <img class="header__nav-img" src="img/myCart.svg" alt="">
+          <a href="reviews-two.html" class="header__link">TMLC Review</a>
+        </li>
+        <li class="header__nav">
+          <img class="header__nav-img" src="img/myCart.svg" alt="">
+          <a href="news.html" class="header__link">Blog</a>
+        </li>
+        <li class="header__nav">
+          <img class="header__nav-img" src="img/myCart.svg" alt="">
+          <a href="contact.html" class="header__link">Contact</a>
+        </li>
+        <li class="header__nav">
+          <img class="header__nav-img" src="img/login.svg" alt="">
+          <a href="sing.html" class="header__link">Login</a>
+        </li>
+
+      </ul>
+      <!--  cart || lang    -->
+      <ul class="list-reset d-flex align-items-center header__mobile-select">
+
+        <div class="header__nav-lang">
+          <div class="select">
+
+            <div class="selectBtn" data-type="firstOption">
+              <img src="img/usa.png" alt="">
+            </div>
+
+          </div>
+        </div>
+      </ul>
+    </div>
+  </div>
+</header>
+
+  <main class="main">
+    <div class="assessment">
+  <div class="container-fluid">
+    <h3 class="assessment__title">TMLC Assessment</h3>
+    <div class="assessment__card">
+      <div class="assessment__card-item">
+        <div class="assessment__card-item-top">
+          <div class="assessment__card-item-top-header">
+            <p> MINI <br>
+              ASSESSMENT</p>
+          </div>
+          <div class="assessment__card-item-top-center">
+            <h2> Free</h2>
+            <ul class="assessment__card-item-top-center-list">
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                12 Questions
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                Self Assessment
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                ANCHOR factor analysis guide
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                The Market Leader's CODE guide
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                32 page digital report guide
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="assessment__card-item-bottom">
+          <div class="assessment__card-item-bottom-btn">
+            <a class="assessment__card-item-bottom-btn-link trigger2" href="#">Start Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="assessment__card-item">
+        <div class="assessment__card-item-top">
+          <div class="assessment__card-item-top-header">
+            <p> Full assessment with
+              <br>
+              digital report</p>
+          </div>
+          <div class="assessment__card-item-top-center">
+            <h2>£39</h2>
+            <ul class="assessment__card-item-top-center-list">
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                60 Questions
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                Self assessment
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                360 Role Assessment invitations
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                ANCHOR Factors Analysis
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                The Market Leader's Code
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                Internal vs External ANCHOR Factor Bias
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                Self vs 360 Analysis
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                High to Low Score Analysis
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                CODE Builders Tactics
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                32 Page Digital Report
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="assessment__card-item-bottom">
+          <div class="assessment__card-item-bottom-btn">
+            <button class="assessment__card-item-bottom-btn-link trigger" href="">Purchase</button>
+          </div>
+        </div>
+      </div>
+      <div class="assessment__card-item">
+        <div class="assessment__card-item-top">
+          <div class="assessment__card-item-top-header">
+            <p> Full assessment with
+              <br>
+              video debrief</p>
+          </div>
+          <div class="assessment__card-item-top-center">
+            <h2>£99</h2>
+            <ul class="assessment__card-item-top-center-list">
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                60 Questions
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                Self assessment
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                360 Role Assessment invitations
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                ANCHOR Factors Analysis
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                The Market Leader's Code
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                Internal vs External ANCHOR Factor Bias
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                Self vs 360 Analysis
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                High to Low Score Analysis
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                CODE Builders Tactics
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                32 Page Digital Report
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                Online Video Debrief
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="assessment__card-item-bottom">
+          <div class="assessment__card-item-bottom-btn">
+            <button class="assessment__card-item-bottom-btn-link trigger" href="">Purchase</button>
+          </div>
+        </div>
+      </div>
+      <div class="assessment__card-item">
+        <div class="assessment__card-item-top">
+          <div class="assessment__card-item-top-header">
+            <p>Full assessment with
+              <br>
+              support programme</p>
+          </div>
+          <div class="assessment__card-item-top-center">
+            <h2>£POA</h2>
+            <ul class="assessment__card-item-top-center-list">
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                60 Questions
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                Self assessment
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                360 Role Assessment invitations
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                ANCHOR Factors Analysis
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                The Market Leader's Code
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                Internal vs External ANCHOR Factor Bias
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                Self vs 360 Analysis
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                High to Low Score Analysis
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                CODE Builders Tactics
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                32 Page Digital Report
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                Online Video Debrief
+              </li>
+              <li class="assessment__card-item-top-center-list-item">
+                <img src="img/tick.svg" alt="">
+                Tailored Coaching or Mentoring
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="assessment__card-item-bottom">
+          <div class="assessment__card-item-bottom-btn">
+            <a class="assessment__card-item-bottom-btn-link" href="contact.html ">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal  -->
+  <div class="assessment-modal">
+    <div class="assessment-modal-content">
+      <span class="close-button">&times;</span>
+      <div class="page__three-form">
+        <div class="page__three-form-left">
+          <h4 class="page__three-form-left-title">What’s in your cart</h4>
+          <div class="page__three-form-left-promotion">
+            <input class="page__three-form-left-promotion-input" type="text" placeholder="Promotion Code">
+            <button class="btn-reset page__three-form-left-promotion-btn" type="submit">Apply</button>
+          </div>
+          <div class="page__three-form-left-price">
+            <div class="page__three-form-left-price-header">
+              <p>Package</p>
+              <p>Price</p>
+            </div>
+            <div class="page__three-form-left-price-item">
+              <div class="page__three-form-left-price-item-left">
+                <span><img src="img/car.svg" alt="car"></span>
+                <p>Subtotal</p>
+              </div>
+              <div class="page__three-form-left-price-item-right">
+                <p>$215.00</p>
+              </div>
+            </div>
+            <div class="page__three-form-left-price-item">
+              <div class="page__three-form-left-price-item-left">
+                <span><img src="img/price.svg" alt="car"></span>
+                <p>Subtotal</p>
+              </div>
+              <div class="page__three-form-left-price-item-right">
+                <p>$215.00</p>
+              </div>
+            </div>
+            <div class="page__three-form-left-price-item">
+              <div class="page__three-form-left-price-item-left">
+                <span><img src="img/price2.svg" alt="car"></span>
+                <p>Subtotal</p>
+              </div>
+              <div class="page__three-form-left-price-item-right">
+                <p>$215.00</p>
+              </div>
+            </div>
+            <div class="page__three-form-left-price-item item__border">
+              <div class="page__three-form-left-price-item-left">
+                <p class="text_bottom">Discount</p>
+              </div>
+              <div class="page__three-form-left-price-item-right">
+                <p>$0.00</p>
+              </div>
+            </div>
+            <div class="page__three-form-left-price-item item__border">
+              <div class="page__three-form-left-price-item-left">
+                <p class="text_bottom"><b>Due Now</b></p>
+              </div>
+              <div class="page__three-form-left-price-item-right">
+                <p><b>$215.00</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page__three-form-center">
+          <h4 class="page__three-form-center-title">Personal Details</h4>
+          <div class="page__three-form-center-labelLine">
+            <label class="page__three-form-center-labelLine">
+              First Name
+              <input type="password" required>
+            </label>
+            <label class="page__three-form-center-labelLine">
+              Surname
+              <input type="password" required>
+            </label>
+          </div>
+          <label for="companyName" class="page__three-form-center-labelLine">
+            Company Name
+            <input type="text" id="companyName">
+          </label>
+          <label for="address" class="page__three-form-center-labelLine">
+            Address
+            <input type="text" id="address" required>
+          </label>
+          <div class="page__three-form-center-select">
+            <label for="selectCity">
+              City
+              <select name="" id="selectCity" required>
+                <option value="">Select</option>
+              </select>
+            </label>
+            <label for="selectState">
+              State
+              <select name="" id="selectState" required>
+                <option value="">Select</option>
+              </select>
+            </label>
+          </div>
+          <div class="page__three-form-center-county">
+            <label for="postCode" class="page__three-form-center-county-left">
+              Post Code/Zip
+              <input type="text" id="postCode" required>
+            </label>
+            <label for="country" class="page__three-form-center-county-right">
+              Country
+              <select name="" id="country" required>
+                <option value="">Select</option>
+              </select>
+            </label>
+          </div>
+          <div class="page__three-form-center-email">
+            <label for="email">
+              Email
+              <input type="email" id="email" required>
+            </label>
+
+          </div>
+          <div class="page__three-form-center-phone">
+            <label for="phone">
+              Mobile
+              <input type="text" id="phone" class="input__tel-countryTwo" required>
+            </label>
+
+          </div>
+          <div class="page__three-form-center-select">
+            <label for="pass" class="page__three-form-center-labelLine">
+              Password
+              <input type="password" id="pass" required>
+            </label>
+            <label for="confPass" class="page__three-form-center-labelLine">
+              Retype your password
+              <input type="password" id="confPass" required>
+            </label>
+          </div>
+        </div>
+        <div class="page__three-form-right">
+          <h4 class="page__three-form-right-title">Payment Information</h4>
+          <label for="cardNumber" class="page__three-form-right-card">
+            Card Number
+            <input id="cardNumber" placeholder="xxxx - xxxx - xxxx - xxxx" maxlength="19" required>
+          </label>
+          <div class="page__three-form-right-date">
+            <label for="exDate">
+              Expiration Date
+              <input id="exDate" placeholder="MM/YY" maxlength="5" required>
+            </label>
+            <label for="cvv">
+              CVV
+              <input id="cvv" placeholder="***" maxlength="3" required>
+            </label>
+          </div>
+          <label for="nameCard" class="page__three-form-right-card">
+            Name on Card
+            <input type="text" id="nameCard" required>
+          </label>
+          <div class="page__three-form-right-confirm">
+            <img src="img/secure.svg" alt="secure">
+            <span>Safe and Secure Payment</span>
+          </div>
+          <div class="page__three-form-right-visa">
+            <img src="img/visa.png" alt="payment">
+          </div>
+          <div class="page__three-form-right-footer">
+            <p>
+              By paying this deposit, you accept the Terms of Use and acknowledge reading the Privacy Policy. You also
+              agree that you will be billed $200.00 deposit.
+            </p>
+            <div class="page__three-form-right-footer-buttons">
+              <button class="page__three-form-right-footer-btn btn-reset btn-outline">Cancel</button>
+              <button class="page__three-form-right-footer-btn btn-reset btn-red" id="buttonPay">Pay Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  modal two  -->
+
+  <div class="assessment-two">
+    <div class="assessment-two-content">
+      <span class="close-button">&times;</span>
+      <div class="page__three-form-two">
+        <div class="page__three-form-center" style="padding: 0; border: none">
+          <h4 class="page__three-form-center-title">Registration Details</h4>
+          <div class="page__three-form-center-select">
+            <label class="page__three-form-center-labelLine">
+              <span> First Name  <span style="color: red">*</span></span>
+              <input type="password" required>
+            </label>
+            <label class="page__three-form-center-labelLine">
+              <span>Surname <span style="color: red">*</span></span>
+              <input type="password" required>
+            </label>
+          </div>
+          <label for="companyName2" class="page__three-form-center-labelLine">
+            <span>Company Name <span style="color: red">*</span></span>
+            <input type="text" id="companyName2">
+          </label>
+          <div class="page__three-form-center-select">
+            <label for="selectCity2">
+              <span>Seniority <span style="color: red">*</span></span>
+              <select name="" id="selectCity2" required>
+                <option value="">Select</option>
+              </select>
+            </label>
+            <label for="selectState2">
+              <span>Job Title <span style="color: red">*</span></span>
+              <select name="" id="selectState2" required>
+                <option value="">Select</option>
+              </select>
+            </label>
+          </div>
+          <label for="address2" class="page__three-form-center-labelLine" style="margin-top: 15px">
+            Address
+            <input type="text" id="address2" required>
+          </label>
+          <div class="page__three-form-center-select">
+            <label for="selectCity2">
+              City
+              <select name="" id="selectCity3" required>
+                <option value="">Select</option>
+              </select>
+            </label>
+            <label for="selectState3">
+              State
+              <select name="" id="selectState3" required>
+                <option value="">Select</option>
+              </select>
+            </label>
+          </div>
+          <div class="page__three-form-center-county">
+            <label for="postCode2" class="page__three-form-center-county-left">
+              Post Code/Zip
+              <input type="text" id="postCode2" required>
+            </label>
+            <label for="country2" class="page__three-form-center-county-right">
+              Country
+              <select name="" id="country2" required>
+                <option value="">Select</option>
+              </select>
+            </label>
+          </div>
+          <div class="page__three-form-center-select">
+            <label for="pass" class="page__three-form-center-labelLine">
+              <span>Password <span style="color: red">*</span></span>
+              <input type="password" id="pass2" required>
+            </label>
+            <label for="confPass2" class="page__three-form-center-labelLine">
+              <span>Retype your password <span style="color: red">*</span></span>
+              <input type="password" id="confPass2" required>
+            </label>
+          </div>
+          <div class="page__three-form-center-email" style="margin-top: 0">
+            <label for="email2">
+              <span>Email <span style="color: red">*</span></span>
+              <input type="email" id="email2" required>
+            </label>
+          </div>
+          <div class="page__three-form-center-phone">
+            <label for="phone2">
+              <span>Mobile <span style="color: red">*</span></span>
+              <input type="text" id="phone2" class="input__tel-countryThree" required>
+            </label>
+
+          </div>
+        </div>
+      </div>
+      <div class="assessment-two-bottom">
+        <button class="btn-reset btn-red">Register</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  </main>
+  <footer class="footer">
+  <div class="container-fluid">
+    <div class="footer__row">
+      <div class="footer__row-item">
+        <h3 class="footer__title">Sign up to our Blog</h3>
+        <form action="">
+          <input type="email" placeholder="Email Address" required>
+          <input type="text" placeholder="Surname" required>
+          <input type="text" placeholder="First Name" required>
+          <button class="btn-reset btn-blue">Sign up</button>
+        </form>
+      </div>
+      <div class="footer__row-item d-flex justify-content-between flex-column align-items-center">
+        <div class="footer__row-item-mobile">
+          <h3 class="footer__title">The Legal Stuff</h3>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="privacy.html">Terms and Conditions</a>
+          <a href="privacy.html">Website Conditions</a>
+        </div>
+        <img src="img/logo-footer.png" alt="logo" class="footer__row-item-img">
+        <ul class="list-reset footer__row-item-social">
+          <li>
+            <a href=""><img src="img/facebook.png" alt="facebook" width="17px"></a>
+          </li>
+          <li>
+            <a href=""><img src="img/twitter.png" alt="twitter" width="17px"></a>
+          </li>
+          <li>
+            <a href=""><img src="img/instagram.png" alt="facebook" width="17px"></a>
+          </li>
+          <li>
+            <a href=""><img src="img/linkedin.png" alt="linkedin" width="17px"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__row-item d-flex flex-column align-items-end">
+        <h3 class="footer__title-left">The Legal Stuff</h3>
+        <a href="">Privacy Policy</a>
+        <a href="">Terms and Conditions</a>
+        <a href="">Website Conditions</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container-lg">
+      <div class="footer__bottom-text">
+        <p>Business in a Box® By Appzoola</p>
+        <span>Copyright © 2022 Appzoola LLC. All rights reserved</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+
+</body>
+
+</html>
+

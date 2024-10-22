@@ -1,0 +1,360 @@
+.accordion-experience {
+  padding: 100px 0 0 0;
+
+  &-block {
+    padding: 0 0 100px 0;
+
+    &__title {
+      margin: 0 0 0 120px;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 61px;
+      color: var(--black-color);
+    }
+
+    @media screen and (max-width: 1550px) {
+      &__title {
+        margin: 0 0 0 10px;
+        font-size: 38px;
+      }
+    }
+
+    @media screen and (max-width: 1440px) {
+      &__title {
+        margin: 0;
+        font-size: 30px;
+      }
+    }
+  }
+
+  &__wrapper {
+    padding: 0 250px 0;
+    margin-top: 40px;
+    position: relative;
+
+    &-title {
+      display: inline-block;
+      transform: rotate(270deg);
+      font-weight: 800;
+      font-size: 25px;
+      line-height: 34px;
+      text-transform: uppercase;
+      color: #fa3838;
+      position: absolute;
+      margin: 0;
+
+      span {
+        color: var(--black-color);
+        margin-left: 8px;
+      }
+
+      &:nth-child(1) {
+        writing-mode: horizontal-tb;
+        text-orientation: mixed;
+        top: 17%;
+        left: 4%;
+      }
+
+      @media screen and (max-width: 1550px) {
+        &:nth-child(1) {
+          left: -5.5%;
+        }
+      }
+
+      @media screen and (max-width: 1440px) {
+        &:nth-child(1) {
+          left: -6%;
+        }
+      }
+
+      @media screen and (max-width: 1200px) {
+        &:nth-child(1) {
+          left: -7%;
+        }
+      }
+
+      &:nth-child(2) {
+        writing-mode: horizontal-tb;
+        text-orientation: mixed;
+        bottom: 19%;
+        left: 4%;
+      }
+
+      @media screen and (max-width: 1550px) {
+        &:nth-child(2) {
+          left: -5.5%;
+        }
+      }
+      @media screen and (max-width: 1440px) {
+        &:nth-child(2) {
+          left: -6%;
+        }
+      }
+      @media screen and (max-width: 1200px) {
+        &:nth-child(2) {
+          left: -7%;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1550px) {
+      &-title {
+        font-size: 20px;
+      }
+    }
+
+    &-items {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+
+      &-block{
+
+      }
+    }
+
+  }
+
+  @media screen and (max-width: 1550px) {
+    &__wrapper {
+      padding: 0 45px 0;
+    }
+  }
+  @media screen and (max-width: 760px) {
+    &__wrapper {
+      padding: 0;
+
+      &-title{
+        display: none;
+      }
+    }
+  }
+
+  .accordion__item {
+    width: 100%;
+    height: auto;
+  }
+
+  .accordion__slot {
+    width: 100%;
+    display: block;
+  }
+
+  .accordion__button {
+    cursor: pointer;
+    padding: 0 20px;
+    width: 100%;
+    height: 85px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #23211F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    background-color: #d9d8d7;
+  }
+
+  @media screen and (max-width: 760px){
+    .accordion__button{
+      height: 45px;
+
+      img{
+        width: 20%;
+      }
+    }
+  }
+
+  .accordionBorder {
+    border: 0.5px solid #23211F;
+  }
+
+  &-info {
+    background-color: #23211f;
+    padding: 100px 0;
+
+    &-title {
+      margin: 0 0 0 50px;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 61px;
+      color: #fff;
+
+    }
+
+    &-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 100px;
+      margin-top: 50px;
+
+      &-link {
+        padding: 15px 100px;
+        background-color: #fa3838;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: #fff;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1550px) {
+    &-info {
+      background-color: #23211f;
+      padding: 80px 0;
+
+      &-title {
+        margin: 0 0 0 30px;
+        font-weight: 700;
+        font-size: 38px;
+
+      }
+
+      &-btn {
+        column-gap: 70px;
+        margin-top: 30px;
+
+        &-link {
+          padding: 15px 50px;
+        }
+      }
+    }
+
+  }
+
+  @media screen and (max-width: 1440px) {
+    &-info {
+      background-color: #23211f;
+      padding: 60px 0;
+
+      &-title {
+        margin: 0 0 0 20px;
+        font-weight: 700;
+        font-size: 32px;
+
+      }
+
+      &-btn {
+        column-gap: 70px;
+        margin-top: 20px;
+
+        &-link {
+          padding: 15px 50px;
+        }
+      }
+    }
+
+  }
+
+  @media screen and (max-width: 760px){
+    &-info{
+      padding: 20px 0;
+      margin-top: 20px;
+
+      &-title {
+        font-weight: 700;
+        font-size: 30px;
+        margin-right: 0;
+        line-height: 40px;
+      }
+
+      &-btn{
+        flex-direction: column;
+
+        &-link{
+          width: 100%;
+          margin-bottom: 10px;
+          padding: 15px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  &-content {
+    background-color: #fa3838;
+    padding: 80px 30px 80px 30px;
+  }
+
+  @media screen and (max-width: 760px){
+    &-content{
+      padding: 30px 0;
+
+      h1{
+        font-size: 20px;
+      }
+    ;
+    }
+  }
+
+  &-whiteBlock {
+    padding: 0 0 60px 100px;
+
+    &-img {
+      border-bottom: 0.5px solid #a3a5a9;
+      margin-bottom: 50px;
+    }
+
+    p {
+      margin: 0;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 27px;
+      color: #000000;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (max-width: 1550px) {
+      p {
+        font-size: 18px;
+
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1550px) {
+    &-whiteBlock {
+      padding: 60px;
+
+      img{
+        height: 80px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 760px){
+    &-whiteBlock {
+      padding: 20px 0;
+    }
+  }
+
+  .bgGray {
+    background-color: #d9d8d7;
+  }
+}
+
+@media screen and (max-width: 760px){
+  .accordion-experience{
+    padding: 40px 20px;
+
+  }
+}
+

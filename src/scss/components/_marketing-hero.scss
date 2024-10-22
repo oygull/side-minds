@@ -1,0 +1,153 @@
+.marketing__hero {
+  padding: 150px 0;
+
+  &-content {
+    display: flex;
+    align-items: center;
+
+    &-img {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 1440px) {
+      &-img {
+        width: 50%;
+      }
+    }
+
+    &-info {
+      width: 70%;
+      padding: 0 250px 0 0;
+
+      &-title {
+        margin: 0;
+        font-weight: 800;
+        font-size: 55px;
+        line-height: 75px;
+        color: #000000;
+      }
+
+      @media screen and (max-width: 1440px) {
+        &-title {
+          font-size: 48px;
+          line-height: 65px
+        }
+      }
+      @media screen and (max-width: 1200px) {
+        &-title {
+          font-size: 32px;
+          line-height: 55px
+        }
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 27px;
+        color: #000000;
+      }
+
+      @media screen and (max-width: 1440px){
+        p {
+          font-size: 18px;
+        }
+      }
+
+      @media screen and (max-width: 1200px){
+        p {
+          font-size: 15px;
+        }
+      }
+
+      &-bold {
+        font-weight: 700;
+        margin: 5px 0 35px 0;
+      }
+
+      &-desc {
+        margin: 0;
+        font-weight: 400;
+
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+
+      &-btn {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: #fff;
+        background-color: #fa3838;
+        border-radius: 10px;
+        padding: 15px 20px;
+        margin-top: 35px;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1440px) {
+      &-info {
+        width: 50%;
+        padding: 0 100px 0 0;
+      }
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 1440px) {
+  .marketing__hero {
+    padding: 100px 0;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .marketing__hero {
+    padding: 40px 20px;
+
+    &-content {
+      flex-direction: column;
+
+      &-img {
+        width: auto;
+
+        img{
+          width: 150px;
+          height: 200px;
+          margin-bottom: 20px;
+          object-fit: contain;
+        }
+      }
+
+      &-info {
+        width: 100%;
+        padding: 0;
+
+        &-title {
+          font-size: 30px;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 20px;
+        }
+
+
+        &-btn {
+          margin-top: 0;
+        }
+      }
+
+
+    }
+  }
+}
+

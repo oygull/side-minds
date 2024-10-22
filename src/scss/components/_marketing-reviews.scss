@@ -1,0 +1,154 @@
+.marketing-reviews {
+  background-color: #23211f;
+  position: relative;
+
+  &__slider {
+    padding: 340px 0;
+
+    &-item {
+      text-align: center;
+      margin: 0 auto;
+      max-width: 1220px;
+
+      p {
+        margin: 0;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 61px;
+        color: var(--light-color);
+      }
+
+      h3 {
+        margin: 0;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 34px;
+        color: var(--light-color);
+      }
+
+    }
+
+    @media screen and (max-width: 1440px) {
+      &-item {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 1200px;
+
+        p {
+          font-size: 38px;
+          line-height: 55px;
+        }
+
+        h3 {
+          font-size: 22px;
+          line-height: 30px;;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      &-item {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 900px;
+
+        p {
+          font-size: 32px;
+          line-height: 45px;
+        }
+
+        h3 {
+          font-size: 20px;
+          line-height: 25px;;
+        }
+      }
+    }
+
+    &-btn {
+      position: absolute;
+      z-index: 1;
+      top: 45%;
+
+      &:hover {
+        cursor: pointer;
+
+        svg {
+          path {
+            fill: #b7473b;
+          }
+        }
+      }
+    }
+
+    .swiper-prev-about {
+      left: 0;
+    }
+
+    .swiper-next-about {
+      right: 0;
+
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    .swiper-pagination {
+      bottom: 150px;
+
+      .swiper-pagination-bullet {
+        width: 35px;
+        height: 35px;
+        background-color: #fff;
+        opacity: 1;
+      }
+    }
+
+    @media screen and (max-width: 1440px) {
+      .swiper-pagination {
+        bottom: 100px;
+      }
+    }
+    @media screen and (max-width: 760px) {
+      .swiper-pagination {
+        bottom: 20px;
+      }
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: #b7473b !important;
+    }
+  }
+
+  @media screen and (max-width: 1440px) {
+    &__slider {
+      padding: 240px 0;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    &__slider {
+      padding: 200px 0;
+    }
+  }
+  @media screen and (max-width: 760px) {
+    &__slider {
+      padding: 130px 40px;
+
+      &-item{
+        p{
+          font-size: 20px;
+          line-height: 38px;
+        }
+        h3{
+          font-size: 13px;
+          line-height: 18px;
+        }
+        &-btn{
+          bottom: 0;
+        }
+
+      }
+    }
+  }
+}
+

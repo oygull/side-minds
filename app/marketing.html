@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>CRB</title>
+
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="https://code.jquery.com/jquery-3.6.1.min.js"
+          integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+          integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="js/main.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+</head>
+
+
+
+<body class="page__body">
+<div class="site-container">
+  <header class="header">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <div class="header__burger burger">
+      <img src="img/burgermenu.svg" alt="burger menu">
+    </div>
+    <a href="index.html" class="header__logo">
+      <img src="img/logo.png" alt="logo" class="logo__img">
+    </a>
+    <div id="menu" class="d-flex align-items-center header__mobile ">
+      <div class="header__close">
+        <span>&times;</span>
+      </div>
+      <!--   menu   -->
+      <ul class="list-reset d-flex justify-content-between  header__mobile-menu">
+        <li class="header__nav">
+          <img class="header__nav-img" src="img/home.svg" alt="">
+          <a href="index.html" class="header__link">Our approach</a>
+        </li>
+        <li class="header__nav">
+          <img class="header__nav-img" src="img/aboutIcon.svg" alt="">
+          <a href="our-experience.html" class="header__link">Our Experience</a>
+        </li>
+        <li class="header__nav">
+          <img class="header__nav-img" src="img/news.svg" alt="">
+          <a href="marketing.html" class="header__link">The Marketing Leader's Code Book</a>
+        </li>
+        <li class="header__nav">
+          <img class="header__nav-img" src="img/chat.svg" alt="">
+          <a href="assessment.html" class="header__link">TMLC Assessment</a>
+        </li>
+        <li class="header__nav">
+          <img class="header__nav-img" src="img/myCart.svg" alt="">
+          <a href="reviews-two.html" class="header__link">TMLC Review</a>
+        </li>
+        <li class="header__nav">
+          <img class="header__nav-img" src="img/myCart.svg" alt="">
+          <a href="news.html" class="header__link">Blog</a>
+        </li>
+        <li class="header__nav">
+          <img class="header__nav-img" src="img/myCart.svg" alt="">
+          <a href="contact.html" class="header__link">Contact</a>
+        </li>
+        <li class="header__nav">
+          <img class="header__nav-img" src="img/login.svg" alt="">
+          <a href="sing.html" class="header__link">Login</a>
+        </li>
+
+      </ul>
+      <!--  cart || lang    -->
+      <ul class="list-reset d-flex align-items-center header__mobile-select">
+
+        <div class="header__nav-lang">
+          <div class="select">
+
+            <div class="selectBtn" data-type="firstOption">
+              <img src="img/usa.png" alt="">
+            </div>
+
+          </div>
+        </div>
+      </ul>
+    </div>
+  </div>
+</header>
+
+  <main class="main">
+    <div class="marketing__hero">
+  <div class="container-fluid">
+    <div class="marketing__hero-content">
+      <div class="marketing__hero-content-img">
+        <img src="img/marketing/book.png" alt="">
+      </div>
+      <div class="marketing__hero-content-info">
+        <h2 class="marketing__hero-content-info-title">The Marketing <br>
+          Leader’s Code</h2>
+        <p class="marketing__hero-content-info-bold">
+          Unlock your potential. Learn the secrets of successful marketing leadership.
+        </p>
+        <p class="marketing__hero-content-info-desc">
+          What makes some marketing leader's successful and others not?'
+        </p>
+        <p class="marketing__hero-content-info-desc">
+          This led to the creation of the book The Marketing Leader’s Code: what makes some marketing leader’s successful,
+          and others get fired?
+        </p>
+        <p class="marketing__hero-content-info-desc">
+          Much has been published about the challenges marketing leader's face, but very little has been done to prepare
+          marketers for the leadership role and be successful. This book fills this gap by distilling the activities of
+          successful marketing leaders into a simple framework with diagnostic assessments, real-life case studies and a
+          toolkit of tactics to build capability.
+        </p>
+        <a class="marketing__hero-content-info-btn" href="#">Buy the Book</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="marketing-reviews">
+  <div class="marketing-reviews__slider">
+    <!-- Slider main container -->
+    <div class="swiper reviews__swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="marketing-reviews__slider-item">
+            <p>“"Something is going very wrong in the relationship between CEOs and CMOs... <br>
+              ...80% of CEOs don't trust or are unimpressed by their CMO.  <br>
+              In comparison, just 10% of the same CEOs feel the same way about their CFOs and CIOs.” </p>
+            <h3>Kimberley Whitler</h3>
+          </div>
+        </div>
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="marketing-reviews__slider-item">
+            <p>“"Something is going very wrong in the relationship between CEOs and CMOs... <br>
+              ...80% of CEOs don't trust or are unimpressed by their CMO.  <br>
+              In comparison, just 10% of the same CEOs feel the same way about their CFOs and CIOs.” </p>
+            <h3>Kimberley Whitler</h3>
+          </div>
+        </div>
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="marketing-reviews__slider-item">
+            <p>“"Something is going very wrong in the relationship between CEOs and CMOs... <br>
+              ...80% of CEOs don't trust or are unimpressed by their CMO.  <br>
+              In comparison, just 10% of the same CEOs feel the same way about their CFOs and CIOs.” </p>
+            <h3>Kimberley Whitler</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-prev-about reviews__slider-btn">
+      <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M20.8789 35.4961L8.37891 23.0938C7.79297 22.4102 7.5 21.6289 7.5 20.75C7.5 19.7734 7.79297 19.0898 8.37891 18.5039L20.8789 6.10156C21.7578 5.22266 23.125 4.92969 24.2969 5.41797C25.4688 5.90625 26.25 7.07812 26.25 8.25V33.25C26.25 34.5195 25.4688 35.5938 24.2969 36.082C23.125 36.5703 21.7578 36.375 20.8789 35.4961Z"
+          fill="#A3A5A9"/>
+      </svg>
+    </div>
+    <div class="swiper-next-about reviews__slider-btn">
+      <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M20.8789 35.4961L8.37891 23.0938C7.79297 22.4102 7.5 21.6289 7.5 20.75C7.5 19.7734 7.79297 19.0898 8.37891 18.5039L20.8789 6.10156C21.7578 5.22266 23.125 4.92969 24.2969 5.41797C25.4688 5.90625 26.25 7.07812 26.25 8.25V33.25C26.25 34.5195 25.4688 35.5938 24.2969 36.082C23.125 36.5703 21.7578 36.375 20.8789 35.4961Z"
+          fill="#A3A5A9"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+    <div class="marketing__info">
+  <div class="container-lg">
+    <div class="marketing__info-img">
+      <h3 class="marketing__info-img-title">Unlocking the marketing leader’s potential</h3>
+      <div class="marketing__info-img-content">
+        <div class="marketing__info-img-content-left">
+          <img src="img/approach-img.png" alt="">
+        </div>
+        <div class="marketing__info-img-content-right">
+          <p class="marketing__info-img-content-right-desc">
+            The Marketing Leader’s Code  helps shortcuts the process for marketing leaders to be successful. It is the
+            culmination of over two years of work reviewing published material, collecting feedback from marketing
+            leaders and testing and validate a working model. It is a marketing leadership book by marketing leaders for
+            marketing leaders.
+          </p>
+          <p class="marketing__info-img-content-right-desc">
+            The Marketing Leader’s Code explains the challenges the marketing leader faces and organises critical
+            success areas into a model made up of 4 genres: Connector, Operator, Disruptor and Explorer or CODE for
+            short.
+          </p>
+          <p class="marketing__info-img-content-right-desc">
+            Each genre is further divided into 3 ANCHOR Factors, where ANCHOR is an acronym for pairs of essential
+            marketing leadership capabilities and behaviours the marketer needs to deliver.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="marketing__info-img bgGray">
+    <div class="container-lg">
+      <h3 class="marketing__info-img-title">Interactive Marketing Leaders Code Map</h3>
+      <div class="marketing__info-img-content">
+        <div class="marketing__info-img-content-right fullWidth">
+          <p class="marketing__info-img-content-right-desc">
+            Every marketing role and every Leadership Team is different, so the blend of ANCHOR Factors needed is
+            different, which changes the CODE and ultimately success in the role. This individual blend can be
+            determined through the assessments in the book or online.
+          </p>
+          <p class="marketing__info-img-content-right-desc">
+
+            The CODE also starts to demystify the differences between the Chief Marketing Officer, Chief Digital
+            Officer, Chief Growth Officer, Chief Customer Officer, Chief Brand Officer and Chief Strategy Officer. Each
+            of these roles have different weights of ANCHOR Factors and knowing this can help the CEO or Leadership Team
+            decide what type of marketer they really need.
+          </p>
+          <p class="marketing__info-img-content-right-desc">
+            Click on the interactive Marketing Leaders Code map to find out more.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="marketing__circle">
+  <div class="container-fluid">
+    <div class="marketing__circle-bottom top">
+      <div id="explorer"  class="marketing__circle-bottom-card cardBox">
+        <img class="marketing__circle-bottom-card-img" src="img/circle1.png" alt="">
+        <h3><span>E</span>xplorer</h3>
+        <p>
+          Marketing leaders who have Explorer as their lead genre are strategic, insightful and brand-led and look at
+          longer term growth. These people could have been management consultants, planners in an advertising agency or
+          have a more traditional mass market background. They thrive in developing business vision, M&A plan, brand
+          strategy and customer value propositions.
+        </p>
+      </div>
+      <div id="connector"  class="marketing__circle-bottom-card cardBox">
+        <img class="marketing__circle-bottom-card-img" src="img/circle2.png" alt="">
+        <h3><span>C</span>onnector</h3>
+        <p>
+          Marketing leaders with Connector as their lead genre form very close relationships with the CEO, Leadership
+          Team and wider business. They are skilful managers of the marketing team and are great at developing talent
+          and building a strong marketing culture. They are good at adopting and following business processes and use
+          internal expertise effectively.
+        </p>
+      </div>
+    </div>
+    <div class="marketing__circle-box">
+      <div class="marketing__circle-box-wrapper">
+        <img src="img/circle-back.png" alt="">
+        <svg width="929" height="929" viewBox="0 0 929 929" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g class="svgIcon ConsistencyChange" opacity="0.0">
+            <path d="M660.25 125.451C600.734 91.0897 533.223 73 464.5 73L464.5 464.5L660.25 125.451Z" fill="#FF0000"/>
+            <path d="M268.75 803.549C328.266 837.91 395.777 856 464.5 856L464.5 464.5L268.75 803.549Z" fill="#FF0000"/>
+          </g>
+          <g class="svgIcon UnityChallenge" opacity="0.0">
+            <path d="M803.549 268.75C769.188 209.235 719.766 159.812 660.25 125.451L464.5 464.5L803.549 268.75Z"
+                  fill="#FF0000"/>
+            <path d="M125.451 660.25C159.812 719.766 209.235 769.188 268.75 803.549L464.5 464.5L125.451 660.25Z"
+                  fill="#FF0000"/>
+          </g>
+          <g class="svgIcon SupportiveAssertive" opacity="0.0">
+            <path d="M856 464.5C856 395.777 837.91 328.266 803.549 268.75L464.5 464.5L856 464.5Z" fill="#FF0000"/>
+            <path d="M73.0001 464.5C73.0001 533.223 91.0899 600.734 125.451 660.25L464.5 464.5L73.0001 464.5Z"
+                  fill="#FF0000"/>
+          </g>
+          <g class="svgIcon AnalyticalCreative" opacity="0.0">
+            <path d="M803.549 660.25C837.91 600.734 856 533.223 856 464.5L464.5 464.5L803.549 660.25Z" fill="#FF0000"/>
+            <path d="M125.451 268.75C91.09 328.265 73.0002 395.777 73.0002 464.5L464.5 464.5L125.451 268.75Z"
+                  fill="#FF0000"/>
+          </g>
+          <g class="svgIcon ConversionConnection" opacity="0.0">
+            <path d="M660.25 803.549C719.766 769.188 769.188 719.766 803.549 660.25L464.5 464.5L660.25 803.549Z"
+                  fill="#FF0000"/>
+            <path d="M268.75 125.451C209.235 159.812 159.813 209.234 125.451 268.75L464.5 464.5L268.75 125.451Z"
+                  fill="#FF0000"/>
+          </g>
+          <g class="svgIcon ShorttermLongterm" opacity="0.0">
+            <path d="M464.5 856C533.223 856 600.735 837.91 660.25 803.549L464.5 464.5L464.5 856Z" fill="#FF0000"/>
+            <path d="M464.5 72.9999C395.778 72.9999 328.266 91.0896 268.75 125.451L464.5 464.5L464.5 72.9999Z"
+                  fill="#FF0000"/>
+          </g>
+        </svg>
+        <div class="one tooltip-info arrow_box">
+          <h4>Ambition ANCHOR Factor</h4>
+          <p>
+            Understands the companies natural homeostasis and works with the CEO to bring their business ambition to
+            life
+            and push the business forward. Tests new ideas and helps change areas which are sub-optimal and reinforce
+            areas which need consistency.
+          </p>
+        </div>
+        <div class="two tooltip-info arrow_box">
+          <h4>Network ANCHOR Factor</h4>
+          <p>
+            Navigates the Leadership Team effectively and ensures the right discussions are held and the right activity
+            gets done.  Skilful at knowing when to challenge and when to create unity for the wider business benefit.
+          </p>
+        </div>
+        <div class="three tooltip-info arrow_box">
+          <h4>Capability ANCHOR Factor</h4>
+          <p>
+            Creates and maintains a high performing marketing team. Makes assertive decisions about the team and
+            agencies and is a skilful situational leader, who is supportive and helps talent feel valued and grow.
+          </p>
+        </div>
+        <div class="four tool  tooltip-info arrow_box">
+          <h4>Headspace ANCHOR Factor</h4>
+          <p>
+            Moves comfortably from using their left brain, full of data and detail, to their right, full of images,
+            concepts and connections. Combines analytical skills with  creative aptitude and flair.
+          </p>
+        </div>
+        <div class="five tooltip-info arrow_box">
+          <h4>Output ANCHOR Factor</h4>
+          <p>
+            Focuses on priority audiences and effectively manages the marketing activity throughout the marketing
+            funnel. From building a connection higher up the funnel, through to the conversion  and retention lower down
+            the funnel.
+          </p>
+        </div>
+        <div class="six tooltip-info arrow_box">
+          <h4>Results ANCHOR Factor</h4>
+          <p>
+            Vigilantly monitors performance in year and responds with short-term initiatives to boost performance. Looks
+            for future revenue opportunities and develops the long-term plan with key stakeholders.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="marketing__circle-adaptive">
+      <div class="marketing__circle-adaptive-wrapper">
+        <div class="marketing__circle-adaptive-wrapper-parts clickPart" data-angle="Connector">Connector</div>
+        <div class="marketing__circle-adaptive-wrapper-parts clickPart" data-angle="Disruptor">Disruptor</div>
+        <div class="marketing__circle-adaptive-wrapper-parts clickPart" data-angle="Explorer">Explorer</div>
+        <div class="marketing__circle-adaptive-wrapper-parts clickPart" data-angle="Operator">Operator</div>
+      </div>
+    </div>
+    <div class="marketing__circle-bottom bottom">
+      <div  data-card="Explorer" class="marketing__circle-bottom-card cardBox newBox">
+        <img class="marketing__circle-bottom-card-img" src="img/circle1.png" alt="">
+        <h3><span>E</span>xplorer</h3>
+        <p>
+          Marketing leaders who have Explorer as their lead genre are strategic, insightful and brand-led and look at
+          longer term growth. These people could have been management consultants, planners in an advertising agency or
+          have a more traditional mass market background. They thrive in developing business vision, M&A plan, brand
+          strategy and customer value propositions.
+        </p>
+      </div>
+      <div  data-card="Connector" class="marketing__circle-bottom-card cardBox newBox">
+        <img class="marketing__circle-bottom-card-img" src="img/circle2.png" alt="">
+        <h3><span>C</span>onnector</h3>
+        <p>
+          Marketing leaders with Connector as their lead genre form very close relationships with the CEO, Leadership
+          Team and wider business. They are skilful managers of the marketing team and are great at developing talent
+          and building a strong marketing culture. They are good at adopting and following business processes and use
+          internal expertise effectively.
+        </p>
+      </div>
+      <div id="disruptor" data-card="Disruptor" class="marketing__circle-bottom-card cardBox">
+        <img class="marketing__circle-bottom-card-img" src="img/circle3.png" alt="">
+        <h3><span>D</span>isruptor</h3>
+        <p>
+          Marketing leader who have Disruptor as their lead genre are entrepreneurial leaders who are opportunistic and
+          thrive on change. They are externally focused and bring in fresh ideas. They tend to be very assertive with
+          the team, rapidly changing the team shape to the situation at hand. They may have come from a strong start-up
+          background and follow agile procedures.
+        </p>
+      </div>
+      <div id="operator" data-card="Operator" class="marketing__circle-bottom-card cardBox">
+        <img class="marketing__circle-bottom-card-img" src="img/circle4.png" alt="">
+        <h3><span>O</span>perator</h3>
+        <p>
+          Marketing leaders who have Operator as their lead genre tend to be more analytical and data led, with a strong
+          skill set in performance media, sales conversion and short term action. They are focused on campaign
+          optimisation lower down the marketing funnel, where there is strong existing intent with customers, and create
+          strong partnerships with the sales team.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+    <div class="marketing__result">
+  <div class="container-lg">
+    <h3 class="marketing__result-title">Actionable Results</h3>
+    <div class="marketing__result-content">
+      <div class="marketing__result-content-left">
+        <img src="img/marketing/result.png" alt="">
+      </div>
+      <div class="marketing__result-content-right">
+        <p class="marketing__result-content-right-desc">
+          Marketing leaders can assess themselves using either a quick mini 'taster' questionnaire or the full 60
+          question version.
+        </p>
+        <p class="marketing__result-content-right-desc">
+          The more detailed full assessment has 60 questions, 5 for each ANCHOR Factor, and drills thoroughly into each
+          part of The Marketing Leader’s Code.
+        </p>
+        <p class="marketing__result-content-right-desc">
+          This fuller assessment allows you to collect wider 360o feedback on the role and produces a XX page report
+          with a detailed explanation of your CODE, corresponding ANCHOR Factors and development tactics to try
+        </p>
+      </div>
+    </div>
+    <div class="marketing__result-btn">
+      <a class="marketing__result-btn-link" href="#">Take the free Mini Assessment</a>
+      <a class="marketing__result-btn-link" href="#">Take the full Assessment</a>
+    </div>
+  </div>
+</div>
+
+  </main>
+  <footer class="footer">
+  <div class="container-fluid">
+    <div class="footer__row">
+      <div class="footer__row-item">
+        <h3 class="footer__title">Sign up to our Blog</h3>
+        <form action="">
+          <input type="email" placeholder="Email Address" required>
+          <input type="text" placeholder="Surname" required>
+          <input type="text" placeholder="First Name" required>
+          <button class="btn-reset btn-blue">Sign up</button>
+        </form>
+      </div>
+      <div class="footer__row-item d-flex justify-content-between flex-column align-items-center">
+        <div class="footer__row-item-mobile">
+          <h3 class="footer__title">The Legal Stuff</h3>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="privacy.html">Terms and Conditions</a>
+          <a href="privacy.html">Website Conditions</a>
+        </div>
+        <img src="img/logo-footer.png" alt="logo" class="footer__row-item-img">
+        <ul class="list-reset footer__row-item-social">
+          <li>
+            <a href=""><img src="img/facebook.png" alt="facebook" width="17px"></a>
+          </li>
+          <li>
+            <a href=""><img src="img/twitter.png" alt="twitter" width="17px"></a>
+          </li>
+          <li>
+            <a href=""><img src="img/instagram.png" alt="facebook" width="17px"></a>
+          </li>
+          <li>
+            <a href=""><img src="img/linkedin.png" alt="linkedin" width="17px"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__row-item d-flex flex-column align-items-end">
+        <h3 class="footer__title-left">The Legal Stuff</h3>
+        <a href="">Privacy Policy</a>
+        <a href="">Terms and Conditions</a>
+        <a href="">Website Conditions</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container-lg">
+      <div class="footer__bottom-text">
+        <p>Business in a Box® By Appzoola</p>
+        <span>Copyright © 2022 Appzoola LLC. All rights reserved</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+
+</body>
+
+</html>

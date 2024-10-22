@@ -1,0 +1,149 @@
+.approach {
+  padding: 200px 100px;
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 61px;
+    color: #171717;
+  }
+
+  @media screen and (max-width: 760px){
+    &__title {
+     display: none;
+    }
+  }
+
+  &__info {
+    display: flex;
+    column-gap: 30px;
+    margin-top: 30px;
+
+    &-left {
+      width: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+
+
+      &-title {
+        display: none;
+      }
+
+      @media screen and (max-width: 760px){
+        &-title {
+          display: block;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 38px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 760px){
+      &-left{
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        img{
+          width: 110px;
+          height: 120px;
+          margin-right: 10px;
+          margin-bottom: 30px;
+          object-fit: contain;
+        }
+      }
+    }
+
+    &-right {
+      width: 85%;
+
+      p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        margin: 0;
+        color: #171717;
+        padding-right: 150px;
+        //max-width: 990px;
+
+        &:not(:last-child) {
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1550px) {
+      &-right {
+
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 20px;
+          color: #171717;
+          padding-right: 120px;
+
+          &:not(:last-child) {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 760px){
+      &-right{
+        width: auto;
+
+
+        p{
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 760px){
+    &__info{
+      flex-direction: column;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--light-color);
+    background-color: #fa3838;
+    border-radius: 10px;
+    padding: 15px 170px;
+    margin-top: 50px;
+
+    &:hover {
+      color: var(--light-color);
+    }
+  }
+
+  @media screen and (max-width: 1550px) {
+    &__btn {
+      padding: 15px 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .approach {
+    padding: 120px 20px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .approach {
+    padding: 30px 20px;
+
+    .approach__btn{
+      display: none;
+    }
+  }
+}

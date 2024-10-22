@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>CRB</title>
+
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="https://code.jquery.com/jquery-3.6.1.min.js"
+          integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+          integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="js/main.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+</head>
+
+
+<body class="page__body">
+<div class="site-container">
+  <header class="header">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <div class="header__burger burger">
+      <img src="img/burgermenu.svg" alt="burger menu">
+    </div>
+    <a href="index.html" class="header__logo">
+      <img src="img/logo.png" alt="logo" class="logo__img">
+    </a>
+    <div id="menu" class="d-flex align-items-center header__mobile ">
+      <div class="header__close">
+        <span>&times;</span>
+      </div>
+      <!--   menu   -->
+      <ul class="list-reset d-flex justify-content-between  header__mobile-menu">
+        <li class="header__nav">
+          <img class="header__nav-img" src="img/home.svg" alt="">
+          <a href="index.html" class="header__link">Our approach</a>
+        </li>
+        <li class="header__nav">
+          <img class="header__nav-img" src="img/aboutIcon.svg" alt="">
+          <a href="our-experience.html" class="header__link">Our Experience</a>
+        </li>
+        <li class="header__nav">
+          <img class="header__nav-img" src="img/news.svg" alt="">
+          <a href="marketing.html" class="header__link">The Marketing Leader's Code Book</a>
+        </li>
+        <li class="header__nav">
+          <img class="header__nav-img" src="img/chat.svg" alt="">
+          <a href="assessment.html" class="header__link">TMLC Assessment</a>
+        </li>
+        <li class="header__nav">
+          <img class="header__nav-img" src="img/myCart.svg" alt="">
+          <a href="reviews-two.html" class="header__link">TMLC Review</a>
+        </li>
+        <li class="header__nav">
+          <img class="header__nav-img" src="img/myCart.svg" alt="">
+          <a href="news.html" class="header__link">Blog</a>
+        </li>
+        <li class="header__nav">
+          <img class="header__nav-img" src="img/myCart.svg" alt="">
+          <a href="contact.html" class="header__link">Contact</a>
+        </li>
+        <li class="header__nav">
+          <img class="header__nav-img" src="img/login.svg" alt="">
+          <a href="sing.html" class="header__link">Login</a>
+        </li>
+
+      </ul>
+      <!--  cart || lang    -->
+      <ul class="list-reset d-flex align-items-center header__mobile-select">
+
+        <div class="header__nav-lang">
+          <div class="select">
+
+            <div class="selectBtn" data-type="firstOption">
+              <img src="img/usa.png" alt="">
+            </div>
+
+          </div>
+        </div>
+      </ul>
+    </div>
+  </div>
+</header>
+
+  <main class="main">
+    <div class="news ">
+  <div class="news__hero news-none">
+    <div class="container-lg news-m">
+      <h4 class="news__hero-title">Blog 1</h4>
+    </div>
+  </div>
+  <div class="container-lg news-m">
+    <div class="news__wrapper">
+      <div class="news__wrapper-left">
+        <h5 class="news__wrapper-left-title">Blog 1</h5>
+        <div class="news__wrapper-left-article">
+          <div class="news__wrapper-left-article-header">
+            <span class="news__wrapper-left-article-header-date">12 Sept 2022</span>
+            <div class="news__wrapper-left-article-header-row">
+              <h3 class="news__wrapper-left-article-header-row-title">Heading</h3>
+            </div>
+          </div>
+          <div class="news__wrapper-left-article-img">
+            <img src="img/blog1.png" alt="article">
+          </div>
+          <div class="news__wrapper-left-article-body">
+            <div class="news__wrapper-left-article-body-dialog">
+              <h4 class="news__wrapper-left-article-body-dialog-title">Sub heading</h4>
+              <p class="news__wrapper-left-article-body-dialog-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis
+                tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus
+                elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu
+                ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim
+                egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna.
+                Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum
+                tellus.
+              </p>
+              <p class="news__wrapper-left-article-body-dialog-desc textIntend">
+                Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate
+                nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu
+                vestibulum vestibulum. Morbi a eleifend magna. Nam metus lacus, porttitor eu mauris a, blandit ultrices
+                nibh. Mauris sit amet magna non ligula vestibulum eleifend. Nulla varius volutpat turpis sed lacinia.
+                Nam eget mi in purus lobortis eleifend. Sed nec ante dictum sem condimentum ullamcorper quis venenatis
+                nisi. Proin vitae facilisis nisi, ac posuere leo.
+              </p>
+              <p class="news__wrapper-left-article-body-dialog-desc textIntend"> Nam pulvinar blandit velit, id condimentum diam
+                faucibus at. Aliquam lacus nisi, sollicitudin at nisi
+                nec, fermentum congue felis. Quisque mauris dolor, fringilla sed tincidunt ac, finibus non odio. Sed
+                vitae mauris nec ante pretium finibus. Donec nisl neque, pharetra ac elit eu, faucibus aliquam ligula.
+                Nullam dictum, tellus tincidunt tempor laoreet, nibh elit sollicitudin felis, eget feugiat sapien diam
+                nec nisl. Aenean gravida turpis nisi, consequat dictum risus dapibus a. Duis felis ante, varius in neque
+                eu, tempor suscipit sem. Maecenas ullamcorper gravida sem sit amet cursus. Etiam pulvinar purus vitae
+                justo pharetra consequat. Mauris id mi ut arcu feugiat maximus. Mauris consequat tellus id tempus
+                aliquet.
+              </p>
+              <p class="news__wrapper-left-article-body-dialog-desc textIntend">
+                Vestibulum dictum ultrices elit a luctus. Sed in ante ut leo congue posuere at sit amet ligula.
+                Pellentesque eget augue nec nisl sodales blandit sed et sem. Aenean quis finibus arcu, in hendrerit
+                purus. Praesent ac aliquet lorem. Morbi feugiat aliquam ligula, et vestibulum ligula hendrerit vitae.
+                Sed ex lorem, pulvinar sed auctor sit amet, molestie a nibh. Ut euismod nisl arcu, sed placerat nulla
+                volutpat aliquet. Ut id convallis nisl. Ut mauris leo, lacinia sed elit id, sagittis rhoncus odio.
+                Pellentesque sapien libero, lobortis a placerat et, malesuada sit amet dui. Nam sem sapien, congue eu
+                rutrum nec, pellentesque eget ligula.
+              </p>
+              <p class="news__wrapper-left-article-body-dialog-desc textIntend">
+                Nunc tempor interdum ex, sed cursus nunc egestas aliquet. Pellentesque interdum vulputate elementum.
+                Donec erat diam, pharetra nec enim ut, bibendum pretium tellus. Vestibulum et turpis nibh. Cras vel
+                ornare velit, ac pretium arcu. Cras justo augue, finibus id sollicitudin et, rutrum eget metus.
+                Suspendisse ut mauris eu massa pulvinar sollicitudin vel sed enim. Pellentesque viverra arcu et
+                dignissim vehicula. Donec a velit ac dolor dapibus pellentesque sit amet at erat. Phasellus porttitor,
+                justo eu ultrices vulputate, nisi mi placerat lectus, sed rutrum tellus est id urna. Aliquam
+                pellentesque odio metus, sit amet imperdiet nisl sodales eu. Quisque viverra nunc nec vestibulum
+                dapibus. Integer nec diam a libero tincidunt varius sed vel odio. Donec rutrum dapibus massa, vel tempor
+                nulla porta id. Suspendisse vulputate fermentum sem sollicitudin facilisis. Aliquam vehicula sapien nec
+                ante auctor, quis mollis leo tincidunt.
+              </p>
+            </div>
+            <div class="news__wrapper-left-article-body-footer">
+              <button class="btn-reset news__wrapper-left-article-body-footer-left">Previous Article</button>
+              <button class="btn-reset news__wrapper-left-article-body-footer-right">Next Article</button>
+            </div>
+            <div class="news__wrapper-left-article-body-comment">
+              <span class="news__wrapper-left-article-body-comment-title">Read the Comments (10)</span>
+              <!--     comments         -->
+              <div class="news__wrapper-left-article-body-comment-item">
+                <p class="news__wrapper-left-article-body-comment-item-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
+                  mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+                  tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti
+                  sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus
+                  enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu
+                  tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in
+                  elementum tellus.
+                </p>
+                <div class="news__wrapper-left-article-body-comment-item-footer">
+                  <span class="news__wrapper-left-article-body-comment-item-footer-name">John Doe</span>
+                </div>
+              </div>
+              <div class="news__wrapper-left-article-body-comment-item">
+                <p class="news__wrapper-left-article-body-comment-item-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
+                  mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+                  tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti
+                  sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus
+                  enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu
+                  tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in
+                  elementum tellus.
+                </p>
+                <div class="news__wrapper-left-article-body-comment-item-footer">
+                  <span class="news__wrapper-left-article-body-comment-item-footer-name">John Doe</span>
+                </div>
+              </div>
+              <!--     comments         -->
+            </div>
+
+          </div>
+        </div>
+        <div class="news__wrapper-left-article">
+
+          <div class="news__wrapper-left-article-body" >
+            <div class="news__wrapper-left-article-body-user">
+              <h3 class="news__wrapper-left-article-body-user-title">About the Author</h3>
+              <div class="news__wrapper-left-article-body-user-profile">
+                <div class="news__wrapper-left-article-body-user-profile-left">
+                  <img src="img/avatar2.png" alt="avatar">
+                </div>
+                <div class="news__wrapper-left-article-body-user-profile-right">
+                  <span>Jane Dane</span>
+                  <span><img src="img/email.svg" alt=""></span>
+                </div>
+              </div>
+            </div>
+            <div class="news__wrapper-left-article-body-typing">
+              <h3 class="news__wrapper-left-article-body-typing-title">Comments</h3>
+
+              <div id="summernote"></div>
+
+            </div>
+            <div class="news__wrapper-left-article-body-guest">
+              <div class="news__wrapper-left-article-body-guest-header">
+                <h3 class="news__wrapper-left-article-body-guest-title">Guest </h3>
+                <span>Already registered? <a href="login.html">Login here</a></span>
+              </div>
+              <div class="news__wrapper-left-article-body-guest-profile">
+                <div class="news__wrapper-left-article-body-guest-profile-left">
+                  <img src="img/avatar2.png" alt="avatar">
+                </div>
+                <div class="news__wrapper-left-article-body-guest-profile-right">
+                  <span>Monday, 19 September 2022</span>
+                </div>
+              </div>
+              <!--      form        -->
+              <form action="">
+                <div class="news__wrapper-left-article-body-guest-form">
+                  <label class="news__wrapper-left-article-body-guest-form-input" for="name">
+                    <span> First Name</span>
+                    <input type="text" id="name" required>
+                  </label>
+                  <label class="news__wrapper-left-article-body-guest-form-input" for="surname">
+                    <span>Surname</span>
+                    <input type="text" id="surname" required>
+                  </label>
+                  <label class="news__wrapper-left-article-body-guest-form-input" for="surname">
+                    <span>Email</span>
+                    <input type="email" id="Email" required>
+                  </label>
+                  <label class="news__wrapper-left-article-body-guest-form-input" for="password">
+                    <span>Password</span>
+                    <input type="password" id="password" required>
+                  </label>
+                  <label class="news__wrapper-left-article-body-guest-form-input" for="vpassword">
+                    <span>Verify Password</span>
+                    <input type="password" id="vpassword" required>
+                  </label>
+                  <div class="news__wrapper-left-article-body-guest-form-checkbox">
+                    <label for="checkbox2">
+                      <input type="checkbox" required id="checkbox2">
+                      <span>Subscribe to this blog post (Please fill in your email address to subscribe to updates from this post.)</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="news__wrapper-left-article-body-guest-form-footer">
+                  <button type="submit" class="btn-reset btn-blue">Submit</button>
+                </div>
+              </form>
+              <!--      form        -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news__wrapper-right mobile__right">
+        <div class="news__wrapper-right-category">
+          <h3 class="news__wrapper-right-title">Filter by</h3>
+          <ul class="list-reset news__wrapper-right-category-list">
+            <li class="news__wrapper-right-category-list-item">
+              <span>Date</span>
+              <span><input type="checkbox"></span>
+            </li>
+            <li class="news__wrapper-right-category-list-item">
+              <span>Category</span>
+              <span><input type="checkbox"></span>
+            </li>
+            <li class="news__wrapper-right-category-list-item">
+              <span>Author</span>
+              <span><input type="checkbox"></span>
+            </li>
+          </ul>
+        </div>
+        <div class="news__wrapper-right-calendar">
+          <h3 class="news__wrapper-right-title">Find by date</h3>
+          <!--    calendar      -->
+          <div class="calendar" id="table">
+            <div class="calendar-header">
+              <div class="month" id="month-header"></div>
+              <div class="buttons__calendar">
+                <button class="btn-reset btn-prev" title="Mês anterior"><</button>
+                <button class="btn-reset btn-next" title="Próximo mês">></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </main>
+  <footer class="footer">
+  <div class="container-fluid">
+    <div class="footer__row">
+      <div class="footer__row-item">
+        <h3 class="footer__title">Sign up to our Blog</h3>
+        <form action="">
+          <input type="email" placeholder="Email Address" required>
+          <input type="text" placeholder="Surname" required>
+          <input type="text" placeholder="First Name" required>
+          <button class="btn-reset btn-blue">Sign up</button>
+        </form>
+      </div>
+      <div class="footer__row-item d-flex justify-content-between flex-column align-items-center">
+        <div class="footer__row-item-mobile">
+          <h3 class="footer__title">The Legal Stuff</h3>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="privacy.html">Terms and Conditions</a>
+          <a href="privacy.html">Website Conditions</a>
+        </div>
+        <img src="img/logo-footer.png" alt="logo" class="footer__row-item-img">
+        <ul class="list-reset footer__row-item-social">
+          <li>
+            <a href=""><img src="img/facebook.png" alt="facebook" width="17px"></a>
+          </li>
+          <li>
+            <a href=""><img src="img/twitter.png" alt="twitter" width="17px"></a>
+          </li>
+          <li>
+            <a href=""><img src="img/instagram.png" alt="facebook" width="17px"></a>
+          </li>
+          <li>
+            <a href=""><img src="img/linkedin.png" alt="linkedin" width="17px"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__row-item d-flex flex-column align-items-end">
+        <h3 class="footer__title-left">The Legal Stuff</h3>
+        <a href="">Privacy Policy</a>
+        <a href="">Terms and Conditions</a>
+        <a href="">Website Conditions</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container-lg">
+      <div class="footer__bottom-text">
+        <p>Business in a Box® By Appzoola</p>
+        <span>Copyright © 2022 Appzoola LLC. All rights reserved</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+</body>
+
+</html>
